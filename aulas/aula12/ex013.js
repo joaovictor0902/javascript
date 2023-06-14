@@ -1,16 +1,18 @@
-var agora =  new Date ()
-var diaSem = agora.getDay ()
- /*
-    0 - Domingo
-    1 - Segunda
-    2 - Terça
-    3 - Quarta
-    4 - Quinta
-    5 - Sexta
-    6 -  Sábado
+var agora = new Date()
+var diaSem = agora.getDay()
 
- */
-   switch(diaSem){
+/*
+   0 - Domingo
+   1 - Segunda
+   2 - Terça
+   3 - Quarta
+   4 - Quinta
+   5 - Sexta
+   6 - Sábado
+*/
+
+
+switch(diaSem){
    case 0:
       console.log('Domingo')
       break
@@ -33,6 +35,6 @@ var diaSem = agora.getDay ()
       console.log('Sábado')
       break
    default:
-      console.log('[ERRO!]Dia invalido!')
+      console.log('Não foi possível determinar o dia!')
       break
 }
